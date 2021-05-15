@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./libs/CS559/style559.css" />
+</head>
+
+<body>
+  <div id="div1"></div>
+
+  <script src="buildings.js" type="module" defer></script>
+
+
+  <p>
+    For all the houses, I set up the vertex and create geometry with triangles. For the doors and windows, I create a class for addOnObj just for 2 triangle to compose the doors and windows, and let other class to set different materials in parameter Then,
+    I add those new objects to the house (same group with the house)
+  </p>
+  <p>
+    House 1 (left two houses): I have a parameter, "side", to decide whether add a side house to the house, the side house is made up of house 2 with replacing the door with a window I add different 3 window type for front/back, right/left, and roofs The
+    house with the side house will not have the windows on the front.
+  </p>
+  <p>
+    House 2 (middle): This house is what I want to create with the roof and walls to be made up of window/glass. So I cover all four sides with the window (except a spot for the door) and choose a grid texture for the roof.
+  </p>
+  <p>
+    House 3 (right two): Similar to house 1, house 3 can have a side smaller house depend on the param "side". If there is a side smaller, the windows on the left of the larger house will not be added and two smaller windows are added to the left of the smaller
+    house. I use three types of window for left/right, front, and roofs.
+  </p>
+  <div>s
+    <p>Image Sources:</p>
+    <ul>
+      <li> Window: https://www.freepik.com/premium-vector/windows-flat-cartoon-set-isolated-white-background_5441036.html</li>
+      <li> Door: https://www.turbosquid.com/3d-models/cartoon-door-3d-1473203 </li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,13 +1,6 @@
 // @ts-check
-
-/* Set options for jshint (my preferred linter)
- * disable the warning about using bracket rather than dot
- * even though dot is better
- * https://stackoverflow.com/questions/13192466/how-to-suppress-variable-is-better-written-in-dot-notation
- */
 /* jshint -W069, esversion:6 */
 
-// we use defer, so there is no need for onload. Just find the canvas and
 // circles created by users
 let dots = [];
 let rects = [];
