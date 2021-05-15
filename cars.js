@@ -7,7 +7,7 @@ import { GrWorld } from "./libs/CS559-Framework/GrWorld.js";
 // import { GrObject } from "./libs/CS559-Framework/GrObject.js";
 import { Car1, Car2 } from "./carsObj.js";
 
-let world = new GrWorld();
+let world = new GrWorld({where: document.getElementById("div1")});
 
 // place your vehicles into the world here
 let car1 = new Car1({x: -3});

@@ -8,6 +8,7 @@
 
 <body>
   <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas>
+  <br>
   <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" />
   <button id="add">Add 10</button><button id="clear">Clear</button>
 
@@ -16,13 +17,13 @@
 
   <div>
     <ul>
+      <li>Use the slider to change the speed of the boids</li>
       <li>Boids bounce off each other</li>
       <li>Boids bounce off obstacles</li>
-      <li>Visually obvious flocking behavior</li>
-      <li>Some flocking behavior: alignment and mouse attraction (Currenlyt, boids might cluster to the bottom, might fix later)</li>
-      <li>added checkbox that alters steering behavior: check checkbox to turn on the flocking</li>
+      <li>Boids change colors when bounce to other boids, obstacles, and boarders</li>
+      <li>Some flocking behavior: alignment and mouse attraction (Currently, boids might cluster to the bottom at the end, will fix later)</li>
     </ul>
-    <p>Note: as I allow the boids still be able to bounce off each other when flocking, the effect of flockinig would be clear when the velocity is lower or there are less boids</p>
+    <p>As I allow the boids still be able to bounce off each other when flocking, the effect of flockinig would be clear when the velocity is lower or there are less boids</p>
   </div>
 
   <script src="flyingBoids.js" type="module" defer></script>

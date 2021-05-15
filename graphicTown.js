@@ -19,7 +19,8 @@ let world = new GrWorld({
     height: 600,
     background: "#baccd9",
     // groundplanesize: 20,
-    groundplane: "" // not using the plane
+    groundplane: "", // not using the plane
+    where: document.getElementById("div1"),
 });
 
 // put stuff into the world
@@ -27,11 +28,8 @@ let world = new GrWorld({
 // you can look at it for reference, but do not use it in your assignment
 main(world);
 
-// while making your objects, be sure to identify some of them as "highlighted"
-
+// below code frameworks are also provided by the instructors
 ///////////////////////////////////////////////////////////////
-// because I did not store the objects I want to highlight in variables, I need to look them up by name
-// This code is included since it might be useful if you want to highlight your objects here
 function highlight(obName) {
     const toHighlight = world.objects.find(ob => ob.name === obName);
     if (toHighlight) {
@@ -58,6 +56,6 @@ highlight("tree");
 // build and run the UI
 // only after all the objects exist can we build the UI
 // @ts-ignore       // we're sticking a new thing into the world
-world.ui = new WorldUI(world);
+world.ui = new WorldUI(world, 500, document.getElementById("div2"), false);
 // now make it go!
 world.go();

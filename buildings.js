@@ -10,6 +10,7 @@ import { House1, House2, House3, Tree } from "./buildingsObj.js";
 let world = new GrWorld({
   groundplanesize: 8,
   groundplanecolor: "grey",
+  where: document.getElementById("div1"),
 });
 
 
