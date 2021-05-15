@@ -8,7 +8,7 @@ import { GrWorld } from "./libs/CS559-Framework/GrWorld.js";
 import { AutoUI } from "./libs/CS559-Framework/AutoUI.js";
 import { GrCrane, GrExcavator, GrDump, GrLift, GrConcrete } from "./constructionobjects.js";
 
-let cDiv = document.getElementById("construction");
+let cDiv = document.getElementById("div1");
 let world = new GrWorld({ groundplanesize: 10, where: cDiv });
 
 let concrete = new GrConcrete({ x: 10 });

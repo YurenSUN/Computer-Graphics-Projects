@@ -15,7 +15,7 @@ The files in libs folder, all html files excepts the explanation texts of the pr
 
 [Firework](/firework.html)
 
-[flip Dots](/flipDots.html)
+[Flip Dots](/flipDots.html)
 
 [Flying Boids](/flyingBoids.html)
 
@@ -31,8 +31,8 @@ The files in libs folder, all html files excepts the explanation texts of the pr
 
 [Cars](/cars.html)
 
-[Plaids on 3d objects](/plaid.html)
+[3D Plaids](/plaid.html)
 
-[Curves on 3d objects](/curves.html)
+[3D Curves](/curves.html)
 
 [Graphics Town](/graphicTown.html)
