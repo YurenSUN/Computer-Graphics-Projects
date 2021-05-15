@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="03-common.css" />
+</head>
+
+<body>
+    <canvas id="canvas1" height="600px" width="600px"></canvas>
+    
+    <!-- fly with keyboard, w for up, s for down, a for left, d for right-->
+    <script src="2dQuadcopter.js" type="module" defer></script>
+    
+    <p>The Quadcopter with blue frame is traveling in a circle.</p>
+    <p>The Quadcopter with green frame is traveling in a sin curve.</p>
+
+    <p style="margin-bottom: 0;">Fly the Quadcopter with red frame with keyboard! w for up, s for down, a for left, d for right.</p>
+    <p style="margin: 0;">
+        Press the button to reset the Quadcopter to the lower right of the canvas
+        <button id="reset">Reset</button>
+    </p>
+    <p style="margin: 0;">Note: the Quadcopter won't move further if reach the border of the canvas</p>
+    
+    <p style="margin-bottom: 0;"> The quadcopter with yellow fram is moving objects between left and right stacks.
+    <p style="margin: 0;">Other articulated objects: When the quadcopter finish moving the current object, the object to be moved next will have the inner cross spining.</p>
+</body>
+
+</html>
+
