@@ -1,11 +1,11 @@
 // getting the canvas, the below two lines were provided by the instructors
 let canvas = (/** @type {HTMLCanvasElement} */ document.getElementById("canvas1"));
-let context= canvas.getContext('2d');
+let context = canvas.getContext('2d');
 
 // some shadow with transparency for center small circle
 context.fillStyle = `rgba(0,0,0,0.5)`;
 context.beginPath();
-context.arc(250, 100, 355, Math.PI/4, Math.PI/2, false);
+context.arc(250, 100, 355, Math.PI / 4, Math.PI / 2, false);
 context.arcTo(450, 350, 500, 350, 210)
 context.closePath();
 // context.stroke();
@@ -25,7 +25,7 @@ context.stroke();
 // lower half
 context.fillStyle = "white";
 context.beginPath();
-context.arc(250, 250, 200, Math.PI,  Math.PI * 2, true);
+context.arc(250, 250, 200, Math.PI, Math.PI * 2, true);
 context.closePath();
 context.fill();
 context.stroke();
@@ -33,14 +33,14 @@ context.stroke();
 // some shadow with transparency for center small circle
 context.fillStyle = `rgba(0,0,0,0.5)`;
 context.beginPath();
-context.arc(255, 255, 60, 0,  Math.PI * 2, true);
+context.arc(255, 255, 60, 0, Math.PI * 2, true);
 context.closePath();
 context.fill();
 
 // center small circle
 context.fillStyle = "white";
 context.beginPath();
-context.arc(250, 250, 60, 0,  Math.PI * 2, true);
+context.arc(250, 250, 60, 0, Math.PI * 2, true);
 context.closePath();
 context.fill();
 context.stroke();

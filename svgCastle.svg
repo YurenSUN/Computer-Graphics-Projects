@@ -1,83 +1,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600px" width="600px">
-    <defs>
-        <g id="window" fill="white" stroke="white">
-            <path d="M 0 10 C 0 0, 10 0, 10 10" stroke-width="1" />
-            <polygon points="0,10 10,10 10,50 0,50" stroke-width="1" />
-        </g>
-        <g id="wall" stroke="white" fill="#541e24">
-            <polygon points="0,0 100,0 100,260 0,260" />
-            <g transform="translate(30,30)">
-                <use transform="translate(5,0)" xlink:href="#window" />
-                <use transform="translate(25,0)" xlink:href="#window" />
-                <use transform="translate(15,70)" xlink:href="#window" />
-                <use transform="translate(15,140)" xlink:href="#window" />
-            </g>
-        </g>
-        <polygon id="topDecLeft" points="10,0 20,0 20,30, 0,30 0,15 10,15"/>
-        <polygon id="topDecRig" points="0,0 10,0 10,15 20,15 20,30 0,30"/>
+  <defs>
+    <g id="window" fill="white" stroke="white">
+      <path d="M 0 10 C 0 0, 10 0, 10 10" stroke-width="1" />
+      <polygon points="0,10 10,10 10,50 0,50" stroke-width="1" />
+    </g>
+    <g id="wall" stroke="white" fill="#541e24">
+      <polygon points="0,0 100,0 100,260 0,260" />
+      <g transform="translate(30,30)">
+        <use transform="translate(5,0)" xlink:href="#window" />
+        <use transform="translate(25,0)" xlink:href="#window" />
+        <use transform="translate(15,70)" xlink:href="#window" />
+        <use transform="translate(15,140)" xlink:href="#window" />
+      </g>
+    </g>
+    <polygon id="topDecLeft" points="10,0 20,0 20,30, 0,30 0,15 10,15" />
+    <polygon id="topDecRig" points="0,0 10,0 10,15 20,15 20,30 0,30" />
 
-        <g id="top" fill="#541e24" stroke="#541e24">
-            <polygon points="0,0 5,0 5,25 0,25"/>
-            <polygon transform="translate(95,0)" points="0,0 5,0 5,25 0,25" />
+    <g id="top" fill="#541e24" stroke="#541e24">
+      <polygon points="0,0 5,0 5,25 0,25" />
+      <polygon transform="translate(95,0)" points="0,0 5,0 5,25 0,25" />
 
-            <g transform="translate(0,5) scale(0.5,0.5)">
-                <use xlink:href="#topDecRig"/>
-                <use transform="translate(30,0)" xlink:href="#topDecLeft"/>
-                <use transform="translate(50,0)" xlink:href="#topDecRig"/>
+      <g transform="translate(0,5) scale(0.5,0.5)">
+        <use xlink:href="#topDecRig" />
+        <use transform="translate(30,0)" xlink:href="#topDecLeft" />
+        <use transform="translate(50,0)" xlink:href="#topDecRig" />
 
-                <use transform="translate(80,0)" xlink:href="#topDecLeft"/>
-                <use transform="translate(100,0)" xlink:href="#topDecRig"/>
+        <use transform="translate(80,0)" xlink:href="#topDecLeft" />
+        <use transform="translate(100,0)" xlink:href="#topDecRig" />
 
-                <use transform="translate(130,0)" xlink:href="#topDecLeft"/>
-                <use transform="translate(150,0)" xlink:href="#topDecRig"/>
-    
-                <use transform="translate(180,0)" xlink:href="#topDecLeft"/>
-            </g>
+        <use transform="translate(130,0)" xlink:href="#topDecLeft" />
+        <use transform="translate(150,0)" xlink:href="#topDecRig" />
 
-            <polygon transform="translate(0,20)" points="0,0 100,0 100,20 0,20" stroke-width="1" />
-        </g>
+        <use transform="translate(180,0)" xlink:href="#topDecLeft" />
+      </g>
 
-        <g id="tower" fill="#7c1823" stroke="#7c1823">
-            <polygon transform="translate(68,0)" points="0,0 4,0 4,200 0,200" stroke-width="1" />
-            <polygon fill="#541e24" transform="translate(72,0)" points="0,0 50,10 50,50 0,50" stroke-width="1" />
-            <g transform="translate(0,70)">
-                <polygon transform="translate(0,50)" points="0,0 140,0 130,50 10,50" stroke-width="1" />
-                <polygon transform="translate(20,50)" points="0,0 100,0 100,200 0,200" stroke-width="1" />
-                <path fill="white" stroke-width="5" d="M 69.5, 45 a 68,5 0 1,0 1,0 z"/>
-                <polygon transform="translate(68,0)" points="0,0 4,0 4,200 0,200" stroke-width="1" />
-                <path transform="translate(-0.5,48)" d="M 70, 35 a 60.5,15 0 1,0 1,0 z"/>
-            </g>
-        </g>
-        
-    </defs>
-
-    <!-- mountains behind-->
-    <g transform="translate(0, 400)">
-        <polygon transform="translate(10,-20)" fill="darkgray" points="-100,200 0,0 100,-20 120,40, 200,-100 400,0 450,-200 500,-170 540,-120 580,-150, 600,0 600,200z"/>
-        <polygon fill="gray" points="0,200 0,0 100,-20 120,40, 200,-100 400,0 450,-200 500,-170 540,-120 580,-150, 600,0 600,200z"/>
+      <polygon transform="translate(0,20)" points="0,0 100,0 100,20 0,20" stroke-width="1" />
     </g>
 
-    <!-- castle -->
-    <g transform="translate(0,50)">
-        <use transform="translate(190,20) scale(0.75, 0.75)" xlink:href="#tower" fill="grey"/>
-        <!-- white background -->
-        <polygon fill="white" points="150,200, 150,525 330,525 330,200"/>
-        <g transform="translate(150,150)">
-            <use transform="translate(1,17.5) skewY(-10) scale(0.98,1)" xlink:href="#top"/>
-            <polygon fill="white" points="99.5,-.5 101,-.5 101,37.5 99.5,37.5"/>
-            <use transform="translate(0,55.5) skewY(-10)" xlink:href="#wall" />
-            <use transform="translate(101,0) skewY(10) scale(0.78,1)" xlink:href="#top"/>
-            <use transform="translate(100,37.5) skewY(10) scale(0.8,1)" xlink:href="#wall" />
-            
-            <polygon fill="#2b1216" transform="translate(-10,326)" points="0,0 10,-10 109.5,-28 109.5,49 0,49" stroke-width="1" />
-            <polygon fill="#2b1216" transform="translate(100,297.5)" points="0,0 80,14.5 90,24.5 90,77.5 0,77.5" stroke-width="1" />
-        </g>    
+    <g id="tower" fill="#7c1823" stroke="#7c1823">
+      <polygon transform="translate(68,0)" points="0,0 4,0 4,200 0,200" stroke-width="1" />
+      <polygon fill="#541e24" transform="translate(72,0)" points="0,0 50,10 50,50 0,50" stroke-width="1" />
+      <g transform="translate(0,70)">
+        <polygon transform="translate(0,50)" points="0,0 140,0 130,50 10,50" stroke-width="1" />
+        <polygon transform="translate(20,50)" points="0,0 100,0 100,200 0,200" stroke-width="1" />
+        <path fill="white" stroke-width="5" d="M 69.5, 45 a 68,5 0 1,0 1,0 z" />
+        <polygon transform="translate(68,0)" points="0,0 4,0 4,200 0,200" stroke-width="1" />
+        <path transform="translate(-0.5,48)" d="M 70, 35 a 60.5,15 0 1,0 1,0 z" />
+      </g>
     </g>
 
-    <!-- ground before -->
-    <polygon transform="translate(0,600)" fill="lightgray" points="0,200 0,0 40,-50 70,-40 140,-60 170,-50 200,-80 250,-50 330,-60 360,-73 600,200z"/>
-    <polygon transform="translate(30,600)" fill="#a4aca7" points="0,200 0,0 40,-50 70,-40 140,-60 170,-50 200,-80 250,-50 330,-60 360,-73 600,200z"/>
+  </defs>
 
-    
+  <!-- mountains behind-->
+  <g transform="translate(0, 400)">
+    <polygon transform="translate(10,-20)" fill="darkgray" points="-100,200 0,0 100,-20 120,40, 200,-100 400,0 450,-200 500,-170 540,-120 580,-150, 600,0 600,200z" />
+    <polygon fill="gray" points="0,200 0,0 100,-20 120,40, 200,-100 400,0 450,-200 500,-170 540,-120 580,-150, 600,0 600,200z" />
+  </g>
+
+  <!-- castle -->
+  <g transform="translate(0,50)">
+    <use transform="translate(190,20) scale(0.75, 0.75)" xlink:href="#tower" fill="grey" />
+    <!-- white background -->
+    <polygon fill="white" points="150,200, 150,525 330,525 330,200" />
+    <g transform="translate(150,150)">
+      <use transform="translate(1,17.5) skewY(-10) scale(0.98,1)" xlink:href="#top" />
+      <polygon fill="white" points="99.5,-.5 101,-.5 101,37.5 99.5,37.5" />
+      <use transform="translate(0,55.5) skewY(-10)" xlink:href="#wall" />
+      <use transform="translate(101,0) skewY(10) scale(0.78,1)" xlink:href="#top" />
+      <use transform="translate(100,37.5) skewY(10) scale(0.8,1)" xlink:href="#wall" />
+
+      <polygon fill="#2b1216" transform="translate(-10,326)" points="0,0 10,-10 109.5,-28 109.5,49 0,49" stroke-width="1" />
+      <polygon fill="#2b1216" transform="translate(100,297.5)" points="0,0 80,14.5 90,24.5 90,77.5 0,77.5" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- ground before -->
+  <polygon transform="translate(0,600)" fill="lightgray" points="0,200 0,0 40,-50 70,-40 140,-60 170,-50 200,-80 250,-50 330,-60 360,-73 600,200z" />
+  <polygon transform="translate(30,600)" fill="#a4aca7" points="0,200 0,0 40,-50 70,-40 140,-60 170,-50 200,-80 250,-50 330,-60 360,-73 600,200z" />
+
+
 </svg>
 

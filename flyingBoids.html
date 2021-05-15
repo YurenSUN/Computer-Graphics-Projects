@@ -2,32 +2,30 @@
 <html>
 
 <head>
-    <title>WB4: Flock: Student Flocking Assignment</title>
-    <link rel="stylesheet" href="../libs/CS559/style559.css" />
+  <title>WB4: Flock: Student Flocking Assignment</title>
+  <link rel="stylesheet" href="../libs/CS559/style559.css" />
 </head>
 
 <body>
-    <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas>
-    <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" />
-    <button id="add">Add 10</button><button id="clear">Clear</button>
-    
-    <p>alignment<input type="checkbox" id = "ali"></p>
-    <p>mouse <input type="checkbox" id = "mouse"></p>
+  <canvas id="flock" height="600px" width="600px" style="border:2px solid black"></canvas>
+  <input type="range" width="100px" min="0" max="10" step=".2" value="3" id="speed" />
+  <button id="add">Add 10</button><button id="clear">Clear</button>
 
-    <div>
-        <ul>
-            <li>Boids bounce off each other</li>
-            <li>Boids bounce off obstacles</li>
-            <li>Visually obvious flocking behavior</li>
-            <li>Some flocking behavior: alignment and mouse attraction (Currenlyt, boids might cluster to the bottom, might fix later)</li>
-            <li>added checkbox that alters steering behavior: check checkbox to turn on the flocking</li>
-        </ul>
-        <p>Note: as I allow the boids still be able to bounce off each other when flocking, 
-            the effect of flockinig would be clear when the velocity is lower or there are less boids</p>
-    </div>
+  <p>alignment<input type="checkbox" id="ali"></p>
+  <p>mouse <input type="checkbox" id="mouse"></p>
 
-    <script src="flyingBoids.js" type="module" defer></script>
+  <div>
+    <ul>
+      <li>Boids bounce off each other</li>
+      <li>Boids bounce off obstacles</li>
+      <li>Visually obvious flocking behavior</li>
+      <li>Some flocking behavior: alignment and mouse attraction (Currenlyt, boids might cluster to the bottom, might fix later)</li>
+      <li>added checkbox that alters steering behavior: check checkbox to turn on the flocking</li>
+    </ul>
+    <p>Note: as I allow the boids still be able to bounce off each other when flocking, the effect of flockinig would be clear when the velocity is lower or there are less boids</p>
+  </div>
+
+  <script src="flyingBoids.js" type="module" defer></script>
 </body>
 
 </html>
-
