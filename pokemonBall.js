@@ -1,4 +1,4 @@
-// getting the canvas, the below two lines were provided by the instructors
+// The codes in this repo should not be copied for other student assignments for any courses.
 let canvas = (/** @type {HTMLCanvasElement} */ document.getElementById("canvas1"));
 let context = canvas.getContext('2d');
 

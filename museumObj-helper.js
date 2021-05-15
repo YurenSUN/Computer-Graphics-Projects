@@ -1,3 +1,4 @@
+// The codes in this repo should not be copied for other student assignments for any courses.
 // Helper functions for 07-09-01
 // Provided by the instructors
 // @ts-check

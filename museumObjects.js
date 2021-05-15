@@ -1,9 +1,4 @@
-/**
- * Framework, helper codes, and codes related to object 1 were 
- * written by Michael Gleicher, January 2019
- * modified January 2020
- */
-
+// The codes in this repo should not be copied for other student assignments for any courses.
 // @ts-check
 /* jshint -W069, esversion:6 */
 

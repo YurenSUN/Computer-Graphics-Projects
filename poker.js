@@ -1,3 +1,4 @@
+// The codes in this repo should not be copied for other student assignments for any courses.
 // @ts-check
 /* jshint -W069, -W141, esversion:6 */
 export { };  // null statement to tell VSCode we're doing a module

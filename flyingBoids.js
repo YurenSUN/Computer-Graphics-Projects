@@ -1,3 +1,4 @@
+// The codes in this repo should not be copied for other student assignments for any courses.
 // @ts-check
 /* jshint -W069, esversion:6 */
 
